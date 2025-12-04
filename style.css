@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: Edwardian Script ITC;
-
+    list-style: none;
     
 }
+body{
+    width:100vw;
+    overflow-x: hidden;
+}
 nav{
+    width: 100%;
     background-color:rgb(73, 142, 109);
     color: black;
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -15,13 +22,12 @@ h1{
     font-family: Edwardian Script ITC;
 }
 
-li, h1, ul{
-    display: inline;
-}
 ul{
-    margin-left: 50%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    display: flex;
+    flex-direction: row;
+
+        
 }
 li{
     color:black;
@@ -32,34 +38,33 @@ color: rgb(193, 220, 243);
 }
 input{
     width: 30%;
-    padding-right: 30px;
     background-color: rgb(167, 214, 150);
 }
 .Searchbar{
-    padding: 20px;
     text-align: center;
     background-color:rgb(167, 214, 150);
+    
 }
 
 .resize-image{
     width: 400px;
     height: 300px;
-    object-fit: cover;  
+    object-fit: cover; 
+    display: flex;
+    justify-content: center;
+    
+
+
 }
 .box{
-    border-color: rgb(167, 214, 150);
-    border-width: 2px;
-    border-style: solid;
     display: inline-block;
-    width: 1220px;
+    width: 100%;
     background-color:rgb(167, 214, 150);
-    padding:20px
     
 }
 .Hob{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(167, 214, 150);
-    padding: 20px;
     margin-top: 10px;
     
     
@@ -68,13 +73,54 @@ input{
     text-align: center;
     margin-top: 10px;
     background-color: rgb(167, 214, 150);
-    padding: 1px;
 }
 .Contact{
     background-color: rgb(167, 214, 150);
     color: black;
-    padding: 20px;
     text-align: center;
     margin-top: 10px;
     font-family: Edwardian Script ITC;
+}
+
+@media screen and (max-width:600px){
+    
+    .Searchbar{
+        background-color: rgb(143, 143, 69);
+        width: 100%;
+    }
+     .resize-image{
+        width: 50%;
+        background-color: rgb(143, 143, 69);
+    }
+    .box p {
+        width: 100%;
+        background-color: rgb(143, 143, 69);
+    }
+    .box{
+        width:100%;
+        background-color: rgb(143, 143, 69);
+    }
+    nav{
+     width:100%;
+     background-color: rgb(143, 143, 69);
+         }
+         ul{
+            width:100%;
+         }
+         .Hob{
+            width:100%;
+            background-color: rgb(143, 143, 69);
+            
+         }
+         .about{
+            width:100%;
+            background-color: rgb(143, 143, 69);
+         }
+         .Contact{
+            width:100%;
+            background-color: rgb(143, 143, 69);
+         }
+         input{
+            background-color: rgb(231, 231, 189);
+         }
 }
