@@ -8,6 +8,9 @@
 body{
     width:100vw;
     overflow-x: hidden;
+        background-color:rgb(167, 214, 150);
+        text-align: center;
+
 }
 nav{
     width: 100%;
@@ -15,6 +18,7 @@ nav{
     color: black;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     
 }
 
@@ -26,23 +30,29 @@ ul{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: row;
+    padding-right: 30px;
+    align-items: center;
 
         
 }
 li{
     color:black;
     cursor: pointer;
+
 }
-li:hover{
+li a{
+    text-decoration:none;
+    color: black;
+}
+li a:hover{
 color: rgb(193, 220, 243);
 }
 input{
     width: 30%;
-    background-color: rgb(167, 214, 150);
 }
 .Searchbar{
     text-align: center;
-    background-color:rgb(167, 214, 150);
+    padding: 10px;
     
 }
 
@@ -50,32 +60,30 @@ input{
     width: 400px;
     height: 300px;
     object-fit: cover; 
-    display: flex;
-    justify-content: center;
-    
-
+    padding-bottom: 10px;
 
 }
 .box{
-    display: inline-block;
+    display: flex;
     width: 100%;
-    background-color:rgb(167, 214, 150);
+    align-items: center;   
+    flex-direction: column;
+    padding-right: 30px;
     
 }
-.Hob{
+.Hob {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(167, 214, 150);
     margin-top: 10px;
-    
+    padding-bottom: 20px;
+       
     
 }
 .about{
     text-align: center;
     margin-top: 10px;
-    background-color: rgb(167, 214, 150);
+    padding: 10px;
 }
 .Contact{
-    background-color: rgb(167, 214, 150);
     color: black;
     text-align: center;
     margin-top: 10px;
@@ -83,10 +91,13 @@ input{
 }
 
 @media screen and (max-width:600px){
-    
+
+   
     .Searchbar{
         background-color: rgb(143, 143, 69);
         width: 100%;
+                font-family: Edwardian Script ITC;
+
     }
      .resize-image{
         width: 50%;
@@ -95,14 +106,20 @@ input{
     .box p {
         width: 100%;
         background-color: rgb(143, 143, 69);
+                font-family: Edwardian Script ITC;
+
     }
     .box{
         width:100%;
         background-color: rgb(143, 143, 69);
+                font-family: Edwardian Script ITC;
+
     }
     nav{
      width:100%;
      background-color: rgb(143, 143, 69);
+             font-family: Edwardian Script ITC;
+
          }
          ul{
             width:100%;
@@ -110,17 +127,26 @@ input{
          .Hob{
             width:100%;
             background-color: rgb(143, 143, 69);
+                    font-family: Edwardian Script ITC;
+
+            
             
          }
          .about{
             width:100%;
             background-color: rgb(143, 143, 69);
+                    font-family: Edwardian Script ITC;
+
          }
          .Contact{
             width:100%;
             background-color: rgb(143, 143, 69);
+                    font-family: Edwardian Script ITC;
+
          }
          input{
             background-color: rgb(231, 231, 189);
+                    font-family: Edwardian Script ITC;
+
          }
 }
